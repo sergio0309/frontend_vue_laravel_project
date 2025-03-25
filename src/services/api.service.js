@@ -9,7 +9,7 @@ if(dev){
 export const BASE_URL_API = `${BASE_URL}/api`;
 
 export default function Api(){
-    const token = "";
+    const token = localStorage.getItem("access_token");
     const api = axios.create({
         baseURL: BASE_URL_API,
         headers: {
